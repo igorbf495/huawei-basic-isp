@@ -1,0 +1,50 @@
+quando fizer o acesso ssh vc vai cair na user view 
+
+< >
+
+o comando display é usado para mostrar informações
+
+na user view você não faz configuração
+
+para verificar informações das interfaces:
+	display interface
+
+para verificar informações das interfaces resumidas:
+	display interface brief
+	display ipv6 interface brief
+	display interface description
+
+para verificar a configuração completa do roteador:
+	display cu
+
+módulos de configuração:
+	display current-configuration interface <nome da interface>
+Ex: display current-configuration intarface GigabitEthernet 0/7/0
+
+para ver os módulos de configuração
+	display current-configuration configuration ?
+
+para sair da user view e entrar no mod de configuração:
+	system-view
+
+
+o | grep do linux é o | include do huawei
+	display current-configuration | include pppoe-server 
+esse comando vai mostrar tudo que contém ppoe-server
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+comandos huawei para pppoe
+
+registro de usuários que falharam para ficar online
+	display aaa online-fail-record
+	display aaa online-fail-record brief
+
+registro de usuários que estava online mas caiu
+	display aaa offline-record
+se for apertando y ele vai mostrando informações de user por user
+
+
+informações de um user
+	display access-user username nomedouser
+	display access-user username nomedouser verbose
+
+para procurar por um ip específico
+	display access-user ip-address 100.64.30.1
+
+para procurar por mac
+	display access-user mac-address aabb-ccdd-eeff
+a visualização do mac no huawei é diferente que o normal: aa:bb:cc:dd:ee:ff
+
+para procurar por interface
+	display access-user interface eth-trunk1.1
+
+informações da vlan
+	display access-user pevlan 100
+
+
+para derrubar users
+	aaa
+	cut access-user ?
+
+
+
+
+
+
+
+
+
+
+
+
